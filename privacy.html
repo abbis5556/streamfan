@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StreamFan 개인정보처리방침</title>
+<style>
+  :root { --bg: #ffffff; --text: #1d212a; --muted: #5b6270; --line: #e3e6eb; --accent: #1f6fd1; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0f1115; --text: #e6e8ec; --muted: #8a91a0; --line: #2a2f3a; --accent: #4da3ff; }
+  }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.7 "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .meta { color: var(--muted); margin: 0 0 24px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>StreamFan 개인정보처리방침</h1>
+  <p class="meta">시행일: 2026년 10월 24일 · 적용 대상: StreamFan Android 앱, StreamFan Windows 프로그램</p>
+
+  <p>StreamFan(이하 "앱")은 사용자의 카메라나 기기 화면, 마이크 소리를 사용자가 지정한 라이브 방송 서버로 보내는 방송 송출 앱입니다.
+  이 방침은 앱이 어떤 정보를 어떻게 다루는지 설명합니다. 아래 내용은 특별히 구분하지 않는 한 Android 앱과 Windows 프로그램에 똑같이 적용됩니다.</p>
+
+  <h2>1. 개발자가 수집하는 개인정보</h2>
+  <p><b>앱 개발자는 어떤 개인정보도 수집·저장·전송받지 않습니다.</b>
+  앱에는 개발자가 운영하는 서버가 없으며, 광고·분석·추적 도구(SDK)를 사용하지 않습니다. 회원가입 기능도 없습니다.</p>
+
+  <h2>1-1. YouTube 계정 로그인 (선택)</h2>
+  <p>설정에서 <b>"YouTube 계정으로 로그인해서 키 가져오기"</b>를 누르면, 앱은 <b>YouTube API 서비스</b>를 사용해
+  Google 계정에 <b>YouTube 계정 관리</b> 권한을 요청합니다. 허용하면 앱이 YouTube와 직접 통신해 다음 일만 합니다.</p>
+  <ul>
+    <li>채널 이름 읽기 — 송출 대상 이름 칸이 비어 있을 때 채우는 데 사용</li>
+    <li>라이브 스트림 서버 주소와 스트림 키 읽기 — 송출 대상 설정에 채우는 데 사용 (키가 하나도 없으면 "StreamFan" 이름으로 새로 만듦).
+      로그인으로 키를 넣은 경우, 앱을 켤 때 YouTube에서 키를 다시 받아 최신으로 맞춥니다.</li>
+    <li>사용자가 <b>"방송 만들기"</b>를 누른 경우에만, 사용자가 입력한 제목과 공개 범위로 YouTube 라이브 방송을 만들고 스트림 키에 연결</li>
+  </ul>
+  <p>받아온 서버 주소·스트림 키·채널 이름과 방송 제목·공개 범위 설정은 2항처럼 기기 안에만 저장되며 개발자에게 전송되지 않습니다.
+  Google 로그인 토큰은 앱이 따로 저장하지 않고, 필요할 때마다 기기의 Google Play 서비스에서 받습니다.
+  앱은 위에 적은 것 외에 동영상·댓글 등 다른 YouTube 정보를 읽거나 바꾸지 않습니다.</p>
+  <p>이 기능을 사용하면 <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a>에 동의하는 것으로 보며,
+  Google이 처리하는 정보에는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>이 적용됩니다.
+  앱에 준 권한은 <a href="https://myaccount.google.com/permissions">Google 계정 › 서드 파티 연결</a>에서 언제든 해제할 수 있고,
+  앱에 저장된 키는 설정에서 송출 대상을 삭제하거나 앱을 삭제하면 지워집니다.</p>
+
+  <h2>2. 기기 안에만 저장되는 정보</h2>
+  <p>다음 정보는 사용자의 기기 내부 앱 저장 공간에만 보관되며 개발자에게 전송되지 않습니다.</p>
+  <ul>
+    <li>송출 대상의 이름, 방송 서버 주소, 스트림 키</li>
+    <li>해상도, 비트레이트, 화면 방향 등 앱 설정</li>
+  </ul>
+  <p>Android 앱에서는 이 정보가 기기 백업에 포함되지 않으며, 앱을 삭제하면 함께 삭제됩니다.
+  Windows 프로그램에서는 PC의 사용자 폴더(%LOCALAPPDATA%\StreamFan)에 저장되며, 프로그램을 제거한 뒤 이 폴더를 지우면 삭제됩니다.</p>
+
+  <h2>2-1. 얼굴 보정 (선택)</h2>
+  <p>얼굴 보정의 "갸름하게"·화장 기능을 켜면, 얼굴 윤곽·입술 위치를 찾기 위해 카메라 영상을 <b>기기 안에서만</b> 분석합니다
+  (Android: Google ML Kit 얼굴 인식, Windows: MediaPipe — 둘 다 기기에 포함된 모델로 동작).
+  얼굴 위치 정보는 화면 효과를 그리는 데만 순간적으로 쓰이며 저장하거나 어디로도 전송하지 않습니다. 얼굴로 사람을 식별하지 않습니다.</p>
+
+  <h2>2-2. 웹 오버레이·키 가져오기 (선택)</h2>
+  <p>사용자가 후원 알림 등 웹 오버레이 주소를 넣으면, 앱이 그 웹 페이지를 열어 방송 화면에 표시합니다.
+  "로그인해서 키 자동 가져오기"를 쓰면 앱 안의 브라우저 창에서 사용자가 직접 해당 방송 플랫폼에 로그인하고, 앱은 그 페이지에 표시된 서버 주소와 스트림 키만 읽어 설정에 넣습니다.
+  이 과정의 로그인 정보는 해당 웹사이트와 기기 안의 브라우저 저장 공간에서만 처리되며 개발자에게 전송되지 않습니다.
+  각 웹 페이지에는 해당 서비스의 개인정보처리방침이 적용됩니다.</p>
+
+  <h2>3. 방송 영상·음성의 전송</h2>
+  <p>사용자가 <b>"방송 시작"</b>을 누른 경우에만, 사용자가 설정에 직접 입력한 방송 서버(예: YouTube, Twitch 등 RTMP 서버)로
+  카메라 또는 화면 영상과 마이크(및 선택 시 기기) 소리를 직접 전송합니다. 이 전송은 개발자를 거치지 않습니다.
+  전송된 방송은 해당 방송 서비스의 이용약관과 개인정보처리방침에 따라 처리됩니다.</p>
+
+  <h2>4. 녹화 파일</h2>
+  <p>"녹화"를 사용하면 영상 파일이 사용자 기기의 갤러리(동영상/StreamFan 폴더), Windows에서는 사용자 폴더의 동영상\StreamFan에만 저장됩니다. 어디에도 업로드되지 않습니다.</p>
+
+  <h2>5. 앱이 요청하는 권한 (Android)</h2>
+  <table>
+    <tr><th>카메라</th><td>카메라 영상을 미리 보고 방송·녹화하기 위해 사용합니다.</td></tr>
+    <tr><th>마이크</th><td>방송·녹화에 목소리를 담기 위해 사용합니다.</td></tr>
+    <tr><th>화면 캡처</th><td>사용자가 "화면 송출"을 선택하고 시스템 확인 창에서 허용한 경우에만 기기 화면(과 Android 10 이상에서는 기기 소리)을 방송합니다.</td></tr>
+    <tr><th>알림</th><td>방송·녹화가 진행 중임을 알리고, 알림에서 바로 종료할 수 있게 하기 위해 사용합니다.</td></tr>
+    <tr><th>인터넷</th><td>사용자가 지정한 방송 서버로 영상을 보내고, YouTube 로그인을 사용한 경우 YouTube에서 스트림 키를 받아오기 위해 사용합니다.</td></tr>
+  </table>
+  <p>앱이 백그라운드에 있어도 방송이 끊기지 않도록 방송·녹화·화면 송출 중에는 포그라운드 서비스(상단 알림)를 사용합니다.</p>
+
+  <h2>6. 제3자 제공</h2>
+  <p>개발자는 개인정보를 수집하지 않으므로 제3자에게 제공하는 정보도 없습니다.
+  3항의 방송 전송은 사용자가 직접 선택한 서비스로 보내는 것입니다.</p>
+
+  <h2>7. 아동의 개인정보</h2>
+  <p>앱은 만 14세 미만 아동을 대상으로 하지 않습니다. 각 방송 플랫폼의 연령 제한도 확인해 주세요.</p>
+
+  <h2>8. 방침의 변경</h2>
+  <p>이 방침이 바뀌면 이 페이지에 새 내용과 시행일을 게시합니다.</p>
+
+  <h2>9. 개인정보 보호책임자 및 문의</h2>
+  <table>
+    <tr><th>성명</th><td>강성모</td></tr>
+    <tr><th>이메일</th><td><a href="mailto:abbis5556@naver.com">abbis5556@naver.com</a></td></tr>
+  </table>
+  <p>개인정보 침해에 대한 신고나 상담은 개인정보침해신고센터(privacy.kisa.or.kr, 국번 없이 118)에도 할 수 있습니다.</p>
+</main>
+</body>
+</html>
