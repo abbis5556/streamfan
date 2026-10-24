@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StreamFan</title>
+<meta name="description" content="여러 플랫폼에 동시에 방송하는 무료 방송 프로그램 — YouTube, 치지직, SOOP, Twitch, TikTok">
+<meta property="og:title" content="StreamFan — 무료 동시 송출 방송 프로그램">
+<meta property="og:description" content="YouTube·치지직·SOOP·Twitch에 한 번에 방송하세요. 얼굴 보정, 크로마키, 후원 알림 오버레이까지 무료.">
+<meta property="og:url" content="https://abbis5556.github.io/streamfan/">
+<style>
+  :root { --bg: #ffffff; --soft: #f4f6f9; --text: #1d212a; --muted: #5b6270; --line: #e3e6eb; --accent: #1f6fd1; --live: #e5354a; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #0f1115; --soft: #171a21; --text: #e6e8ec; --muted: #8a91a0; --line: #2a2f3a; --accent: #4da3ff; }
+  }
+  :root[data-theme="dark"] { --bg: #0f1115; --soft: #171a21; --text: #e6e8ec; --muted: #8a91a0; --line: #2a2f3a; --accent: #4da3ff; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.7 "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 48px 16px 64px; }
+  .brand { font-weight: 800; font-size: 15px; letter-spacing: .3px; }
+  .brand span { color: var(--live); }
+  h1 { font-size: clamp(30px, 6vw, 44px); line-height: 1.25; margin: 20px 0 12px; }
+  .lead { font-size: 18px; color: var(--muted); margin: 0 0 28px; max-width: 620px; }
+  .cta { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+  .btn { display: inline-block; padding: 13px 22px; border-radius: 10px; font-weight: 700; text-decoration: none;
+    background: var(--accent); color: #fff; }
+  .btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--line); }
+  .small { font-size: 13px; color: var(--muted); }
+  h2 { font-size: 20px; margin: 48px 0 14px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+  .card { background: var(--soft); border: 1px solid var(--line); border-radius: 12px; padding: 16px; }
+  .card b { display: block; margin-bottom: 4px; }
+  .card p { margin: 0; font-size: 14px; color: var(--muted); }
+  ol { padding-left: 20px; }
+  ol li { margin-bottom: 6px; }
+  .note { background: var(--soft); border-left: 3px solid var(--accent); padding: 12px 14px; border-radius: 6px; font-size: 14px; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><span>●</span> StreamFan</div>
+  <h1>한 번 켜면,<br>모든 플랫폼에 동시에 방송.</h1>
+  <p class="lead">YouTube · 치지직 · SOOP · Twitch · TikTok에 같은 화면을 한꺼번에 보내는 무료 방송 프로그램이에요. 광고도, 회원가입도 없어요.</p>
+  <div class="cta">
+    <a class="btn" href="https://github.com/abbis5556/streamfan/releases/latest/download/StreamFan-Setup.exe">Windows용 무료 다운로드</a>
+    <a class="btn ghost" href="https://github.com/abbis5556/streamfan/releases">모든 버전</a>
+  </div>
+  <p class="small">Windows 10/11 (64비트) · 약 30MB · Microsoft Edge 또는 Chrome 필요</p>
+
+  <h2>주요 기능</h2>
+  <div class="grid">
+    <div class="card"><b>📡 동시 송출</b><p>여러 방송 플랫폼에 같은 화면을 동시에 보내요. YouTube는 로그인만 하면 스트림 키가 자동으로 들어가요.</p></div>
+    <div class="card"><b>✨ 얼굴 보정</b><p>뽀샤시·갸름하게·입술/볼터치 화장까지. 보정 전후를 버튼 하나로 비교해요.</p></div>
+    <div class="card"><b>🟩 크로마키</b><p>그린/블루 스크린을 지우고 원하는 배경 사진을 넣어요.</p></div>
+    <div class="card"><b>🌐 웹 오버레이</b><p>투네이션·위플랩 후원 알림 주소를 넣으면 방송 화면에 투명하게 띄워요.</p></div>
+    <div class="card"><b>🖥 화면·웹캠·텍스트</b><p>화면 공유, 웹캠, 글자, 이미지를 자유롭게 배치하고 오디오 믹서로 소리를 맞춰요.</p></div>
+    <div class="card"><b>⏺ 녹화</b><p>방송하면서 동시에 내 PC에 녹화 파일로 저장해요.</p></div>
+  </div>
+
+  <h2>설치 방법</h2>
+  <ol>
+    <li>위의 <b>무료 다운로드</b>를 눌러 <code>StreamFan-Setup.exe</code>를 받아요.</li>
+    <li>실행하면 <b>"Windows의 PC 보호"</b> 창이 뜰 수 있어요. 개인 개발자 프로그램이라 코드 서명이 없어서 그래요.
+      <b>추가 정보 → 실행</b>을 누르면 돼요.</li>
+    <li>설치가 끝나면 StreamFan이 열려요. 처음 방송 전에 앱의 <b>"ffmpeg 설치"</b> 버튼을 한 번 눌러 주세요 (1~3분).</li>
+  </ol>
+  <p class="note">관리자 권한 없이 내 사용자 폴더에 설치돼요. 지우려면 <b>설정 → 앱 → StreamFan → 제거</b>.</p>
+
+  <footer>
+    <a href="privacy.html">개인정보처리방침</a> · 문의 <a href="mailto:abbis5556@naver.com">abbis5556@naver.com</a><br>
+    YouTube는 Google LLC, Twitch는 Twitch Interactive, Inc.의 상표이며 StreamFan은 이들과 제휴 관계가 없어요.
+  </footer>
+</main>
+</body>
+</html>
